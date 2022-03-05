@@ -1,0 +1,10 @@
+# System file view configs
+**/.DS_Store
+**/Desktop.ini
+
+# Dependency directories
+node_modules/
+
+# Project
+.parcel-cache
+dist/
