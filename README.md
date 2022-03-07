@@ -109,7 +109,7 @@ If the Minicart overlay is a more immersive experience and draws users' focus to
 
 
 #### Other Requirements
-You can use Adobe XD or Figma to design variant B. If you use Figma, include a link to your design file within this project repo. 
+You can use Adobe XD or Figma to design variant B. If you use Figma, include a link to your design file within the README at the root of your project repo, or a new file in `pmdt-ux/`.
 
 You should include any ideations or iterations. For example, if you created low-fidelity wireframes like sketches, include those too!
 
