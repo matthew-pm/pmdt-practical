@@ -1,5 +1,5 @@
 # PMDT FE Practical
-This starter uses [Parcel](https://parceljs.org/), a zero config build tool. By default it handles transpiling and bundling languages such as Sass, and JavaScript. 
+This starter uses [Parcel](https://parceljs.org/), a zero config build tool. By default it handles compiling and bundling languages such as Sass and JavaScript. 
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ npm run dev -- --open
 Your main project code should go here. The files here can by reorganized however you want, but keep in mind that Parcel needs to at least know where the entry point of your project is. Keeping `index.html` where it is will solve that issue, or you can update the `dev` npm script to use a differnt entry file path.
 
 ### `src/assets/`
-Any assets such as images can go here. In Parcel, these files can be used in your markup as expected, by using a relative path. 
+Any assets such as images can go here. In Parcel, these files can be used in your markup as expected, by using a typical relative path. 
 
 ### `dist/`
-Parcel's build output (created automatically)
+Parcel's build output (created automatically). This is what is served by the dev server.

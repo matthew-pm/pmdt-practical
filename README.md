@@ -50,6 +50,11 @@ Your task is to build a web page according to a design. [View the design via an 
 
 This practical also intended to test your ability to analyze a design and extract or infer details that may not be annotated.
 
+The main things to consider with your code:
+- Web development best practices
+- "Good code"
+- Responsive design
+
 #### XD Links: Specs View
 Click the `Specs View` (</> icon) to see information about the design, styles, and easily copy text. In this view, you can navigate around the artboard and inspect specific elements, see their spacing by hovering over adjacent elements, etc. Read more about how to [view and inspect design specs](https://helpx.adobe.com/xd/help/inspect-design-specs.html) in XD links.
 
