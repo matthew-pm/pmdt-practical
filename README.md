@@ -37,20 +37,26 @@ It's highlighy recommended to use the setup as is, with Parcel (no additional co
 #### Code Rules & Requirements
 In the review, we'd like to evaluate your skills and technique regarding HTML, CSS, and JS. Frameworks are not allowed, but certain build tools that provide support for common preprocessors and compilers are allowed.
 
-1. Your source code should consist of primarily HTML, CSS (or Sass), and JS files. Frameworks or libraries like React, Svelte, Vue, and Angular are **not allowed**. Templating languages such as Handlebars and Liquid are **not allowed**.
-2. CSS frameworks such as Bootstrap and Tailwind are **not allowed**. 
-3. CSS tools that _are allowed_:
+- Your source code should consist of primarily HTML, CSS (or Sass), and JS files.
+- Frameworks or libraries like React, Svelte, Vue, and Angular are **not allowed**
+- Templating languages such as Handlebars and Liquid are **not allowed**.
+- CSS frameworks such as Bootstrap and Tailwind are **not allowed**. 
+- CSS tools that _are allowed_:
     - Sass (`.scss`)
     - PostCSS (Parcel can be configured for this easily)
     - CSS resets or variations of this concept, such as [normalize.css](https://github.com/necolas/normalize.css).
-4. You may use tools that help you modularize HTML (e.g., [PostHTML](https://parceljs.org/languages/html/#posthtml) & `posthtml-include`; this has already been configured)
+- You may use tools that help you modularize HTML (e.g., [PostHTML](https://parceljs.org/languages/html/#posthtml) & `posthtml-include`; this has already been configured)
 
 ### Assignment
-Your task is to build a web page according to a design. [View the design via an XD link](https://xd.adobe.com/view/05f9376c-2170-4cfb-b052-4a5dd381ecd5-50aa/grid). Make the rendered page look as close to the design as you can using your knowledge of HTML, CSS, and responsive design.
+Your task is to build a web page according to the given design. [View the design via an XD link](https://xd.adobe.com/view/05f9376c-2170-4cfb-b052-4a5dd381ecd5-50aa/grid). Make the rendered page look as close to the design as you can using your knowledge of HTML, CSS, and responsive design.
 
-This practical also intended to test your ability to analyze a design and extract or infer details that may not be annotated.
+This practical is also intended to test your ability to analyze a design and extract or infer details that may not be annotated.
 
-The main things to consider with your code:
+Read the annotations within the XD link's `Comments View` for additional specifications for the implementation.
+
+The copy for the design can be pulled from the XD link's `Specs View` or from `pmdt-fe/copy.md`.
+
+Some general things to consider with your code:
 - Web development best practices
 - "Good code"
 - Responsive design
@@ -72,14 +78,14 @@ Project Folder: `pmdt-ux`
 <!-- TODO -->
 
 ### Assignment
-Your task is to design **Variant B** of a the Minicart component for a theoretical A/B test. **Variant A**, the control design, is provided in an XD file: [`pmdt-ux/minicart.xd`](./pmdt-ux/minicart.xd). Variant A is also the existing implementation on the Peter Millar website.
+Your task is to design **Variant B** of the Minicart component for a theoretical A/B test. **Variant A**, the control design, is provided in an XD file: [`pmdt-ux/minicart.xd`](./pmdt-ux/minicart.xd). The XD file can also be [viewed on the web](#TODO). Variant A is also the existing implementation on the Peter Millar website.
 
 **Note:** the Minicart and the Cart page are two separate entities. The Minicart is essentially a condensed version of the Cart page. Making changes to the Cart page is not part of this A/B test.
 
 Assume the following statements are true:
 
 - Our customers typically only purchase 1–2 items before checking out.
-- Customers who add 3+ items to their cart, typically never end up checking out.
+- Customers who add 3+ items to their cart typically never end up checking out.
 - Peter Millar is a "Luxury Men's Fashion" brand.
 - Peter Millar uses the text "Bag" or "Shopping Bag" when referencing the user's shopping cart on the site.
 
@@ -103,11 +109,12 @@ If the Minicart overlay is a more immersive experience and draws users' focus to
 
 
 #### Other Requirements
-You should incldue any ideations (i.e., iterations). For example, if you created low-fidelity wireframes like sketches, include those too!
+You can use Adobe XD or Figma to design variant B. If you use Figma, include a link to your design file within this project repo. 
+
+You should include any ideations or iterations. For example, if you created low-fidelity wireframes like sketches, include those too!
 
 ### Deliverables
-- Design Document: this can be an XD file, or a shared Figma file. It should include:
-  - Final comp of Variant B
-  - Prototype of Variant B
+- Design Document (XD or Figma). It should include:
+  - Final comps of Variant B
   - Any non-final versions or iterations you want to share
 - Your answers to the questions in [`pmdt-ux/questions.md`](./pmdt-ux/questions.md)
