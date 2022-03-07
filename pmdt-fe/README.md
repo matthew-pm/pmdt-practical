@@ -8,6 +8,7 @@ There are two npm scripts defined in `package.json`:
 - `build`: builds a production output of your project
 
 To get started:
+
 ```bash
 # Run dev server
 npm run dev

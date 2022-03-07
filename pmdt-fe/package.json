@@ -5,6 +5,8 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
-    "parcel": "^2.3.2"
+    "parcel": "^2.3.2",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.2"
   }
 }

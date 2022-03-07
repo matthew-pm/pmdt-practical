@@ -3,8 +3,8 @@
 **/Desktop.ini
 
 # Dependency directories
-node_modules/
+**/node_modules/
 
 # Project
-.parcel-cache
-dist/
+**/.parcel-cache/
+**/dist/
