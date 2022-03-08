@@ -2,7 +2,7 @@
 # PM Jr. Design Technologist Practical Brief
 
 ## Overview
-These practicals are designed to test your skills and technique across both disciplines: front-end web development and UX design. You should complete the practicals according to the specifications within this document, and afterward respond to sets of questions defined within each directory (`questions.md` files).
+These practicals are designed to test your skills and technique across both disciplines: front-end web development and UX design. You should complete the practicals according to the specifications within this document.
 
 ## Instructions
 This repository has been set up as template repo on GitHub, enabling you to easily [create your project repo](https://github.com/matthew-pm/pmdt-practical/generate) from it.
@@ -69,7 +69,6 @@ Click the `Specs View` (</> icon) to see information about the design, styles, a
 ### Deliverables
 - Your source code for the FE Dev Practical, within `pmdt-fe/`
 - If you modify the initial setup to use a different build tool, you must update the npm scripts or document how to run your project
-- Your answers to the questions in [`pmdt-fe/questions.md`](./pmdt-fe/questions.md)
 
 ---
 
@@ -105,16 +104,16 @@ To reproduce this UI state:
 
 
 #### Hypothesis
-If the Minicart overlay is a more immersive experience and draws users' focus to the content within it, users will be encouraged to proceed to checkout, increasing the conversion rate of completed purchases.
+If the Minicart overlay is more immersive and draws the user's focus to the content within it, the user will be encouraged to proceed to checkout. This will cause an increase in conversion rate of completed purchases.
 
 
 #### Other Requirements
-You can use Adobe XD or Figma to design variant B. If you use Figma, include a link to your design file within the README at the root of your project repo, or a new file in `pmdt-ux/`.
+You can use Adobe XD or Figma to design Variant B. If you use Figma, include a link to your design file at the top of the README at the root of your project repo, or a new file in `pmdt-ux/`.
 
 You should include any ideations or iterations. For example, if you created low-fidelity wireframes like sketches, include those too!
 
 ### Deliverables
 - Design Document (XD or Figma). It should include:
-  - Final comps of Variant B
+  - Final comps for Variant B
   - Any non-final versions or iterations you want to share
-- Your answers to the questions in [`pmdt-ux/questions.md`](./pmdt-ux/questions.md)
+- Your responses to the prompts in [`pmdt-ux/review.md`](./pmdt-ux/review.md)
