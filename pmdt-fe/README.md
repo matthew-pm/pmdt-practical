@@ -11,6 +11,7 @@ To get started:
 
 ```bash
 # Install dependencies
+cd pmdt-fe
 npm install 
 
 # Run dev server
@@ -27,7 +28,7 @@ Your main project code should go here. The files here can by reorganized however
 Note: if you use the `html-include` feature, any HTML file you include with `<include src="<file>.html">...` will have it's path references relative to the file it's "included" within.
 
 ### `src/images/`
-All the image files from the design have been exported and compressed for you, and placed into this directory
+All the image files from the design have been exported and processed for you, and placed into this directory.
 
 Note:
 - `crown-crafted-stealth-logo.svg` is the "Crown Sport: Stealth Series" logotype to use for the hero overlay
@@ -35,4 +36,5 @@ Note:
 - `...-mobile.jpg` files are the versions of the images that should be rendered on mobile-sized screens
 
 ---
+
 Note: the `.gitignore` at the root of the _project_ repo has been configured to sensibly ignore folders within this directory as well.
