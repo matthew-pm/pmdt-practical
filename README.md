@@ -33,12 +33,12 @@ Project Folder: `pmdt-fe`
 
 Read [`pmdt-fe/README.md`](./pmdt-fe/README.md) for more info on the development environment that has been set up for you. The setup uses Parcel, a zero configuration build tool.
 
-It's highly recommended to use the setup as is, with Parcel (no additional configuration should be required to complete the tasks). You can use as much or as little of the boilerplate as you'd like. **If you want to go fully vanilla without a build tool, that's perfectly fine**. In that case, you should document any differences in the npm scripts used to run and build your project in your `pmdt-fe/README.md`.
+It's highly recommended to use the setup as is, with Parcel (no additional configuration should be required to complete the tasks). You can use as much or as little of the boilerplate as you'd like. **If you want to go fully vanilla without a build tool, that's perfectly fine**. In that case case, [`serve`](https://www.npmjs.com/package/serve) will be used to review your code on a dev server unless otherwise noted in your README.
 
-The review process will include running `npm run dev` and `npm run build`, inspecting your source code, and inspecting your page in a browser.
+The review process will include running `npm run dev` and `npm run build`, inspecting your source code, and inspecting your page in a browser. If you use a different build tool, you should document any differences in the npm scripts used to run and build your project in `pmdt-fe/README.md`.
 
 #### Code Rules & Requirements
-In the review, we'd like to evaluate your skills and technique regarding HTML, CSS, and JS. Frameworks are not allowed, but build tools, common preprocessors, and compilers are allowed.
+In the review, we'd like to evaluate your skills and technique regarding HTML, CSS, and JS. Frameworks are not allowed, but build tools, and common preprocessors and compilers are allowed.
 
 - Your source code should consist of primarily HTML, CSS (or Sass), and JS (if applicable).
 - Frameworks or libraries like React, Svelte, Vue, and Angular are **not allowed**
@@ -75,10 +75,9 @@ Click the `Specs View` (</> icon) to see information about the design, styles, a
 
 ## UX Design Practical
 Project Folder: `pmdt-ux`
-<!-- TODO -->
 
 ### Assignment
-Your task is to design **Variant B** of the Minicart component for a theoretical A/B test. **Variant A**, the control design, is provided as PNGs within `pmdt-ux/`. Variant A is also the existing implementation on the [Peter Millar website](https://www.petermillar.com/).
+Your task is to design **Variant B** of the Minicart component for a theoretical A/B test. **Variant A**, the control design, is provided as PNGs within `pmdt-ux/`. Variant A is also the existing implementation on the [Peter Millar website](https://www.petermillar.com/). You can use Adobe XD or Figma.
 
 Assume the following statements are true:
 
@@ -122,4 +121,4 @@ You should include any ideations or iterations. If you create low-fidelity wiref
 - Design Document (XD or Figma). It should include:
   - Final comps for Variant B
   - Any non-final versions or iterations you want to share
-- Anything that might help you present the final design, such as a prototype or other documents.
+- Anything that might help you present the final design, such as a prototype or other documents
