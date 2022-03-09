@@ -1,0 +1,88 @@
+// VARIABLES & MIXINS
+// ────────────────────────────────────
+// Just a few to get you started
+
+// Note: using these font stacks are acceptable for the test
+$font-sans-serif: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif;
+$font-serif: Palatino, "Palatino Linotype", "Georgia", serif;
+
+// Colors
+$color-pm-navy: #071d49;
+$color-gray-darker: #454545;
+$color-gray-dark: #707070;
+$color-gray: #cccccc;
+$color-gray-light: #ebebeb;
+$color-gray-lighter: #f5f5f5;
+
+// Focus Styling
+$color-focus: #1A89E2;
+@mixin focus-ring {
+  outline: 2px solid $color-focus;
+  outline-offset: 2px;
+}
+
+// GLOBAL
+// ────────────────────────────────────
+// Normalize elements so that `width` is not affected by `padding` or `border`
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// ROOT
+// ────────────────────────────────────
+// Initialize the root font size for the document
+
+:root {
+  font-size: 16px;
+}
+
+// BODY
+// ────────────────────────────────────
+
+// Compatibility fixes (credits to twbs):
+// 1. As a best practice, apply a default `background-color`.
+// 2. Prevent adjustments of font size after orientation changes in iOS.
+// 3. Change the default tap highlight to be completely transparent in iOS.
+
+body {
+  margin: 0;
+  font-family: $font-sans-serif;
+  font-size: .875rem; // 14px
+  line-height: 1.5;
+  color: $color-pm-navy;
+  background-color: white; // 1
+  -webkit-text-size-adjust: 100%; // 2
+  -webkit-tap-highlight-color: rgba(black, 0); // 3
+}
+
+// Styles
+// ────────────────────────────────────
+
+.heading {
+  font-family: $font-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+  line-height: 1.1;
+  @media (min-width: 576px) {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.copy {
+  font-size: 1rem;
+  margin: 0;
+  @media (min-width: 576px) {
+    font-size: 1.25rem;
+  }
+}
+
+a {
+  &:focus-visible {
+    @include focus-ring;
+  }
+}

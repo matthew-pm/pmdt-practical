@@ -8,12 +8,15 @@ These practicals are designed to test your skills and technique across both disc
 This repository has been set up as template repo on GitHub, enabling you to easily [create your project repo](https://github.com/matthew-pm/pmdt-practical/generate) from it.
 
 ### Setup
-- Follow the link above, or go to [matthew-pm/pmdt-practical](https://github.com/matthew-pm/pmdt-practical) and click the "Use this template" button
-- Name the repo: `pmdt-practical-<your-initials>`, e.g., `pmdt-practical-ma`
-- Set as Private
+1. Create new repo from template
+    - Follow the link above, or go to [matthew-pm/pmdt-practical](https://github.com/matthew-pm/pmdt-practical) and click the "Use this template" button
+    - Name the repo: `pmdt-practical-<your-initials>`, e.g., `pmdt-practical-ma`
+    - Set as Private
+2. Once you've created the new repo, add the user [**matthew-pm**](https://github.com/matthew-pm) as a collaborator. This will give me easy access to your project repo. I'll review by cloning your project repo. 
+3. Clone the repot to your local machine
 
-Once you've created the new repo, add the user [**matthew-pm**](https://github.com/matthew-pm) as a collaborator. This will give me easy access to your project repo. 
 
+![Creating a new repo from a template in GitHub](./docs/github-template-repo.png)
 
 **Helpful GitHub docs:**
 - [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template)
@@ -21,9 +24,7 @@ Once you've created the new repo, add the user [**matthew-pm**](https://github.c
 
 
 ## Final Deliverable
-Your project repo will serve as the final deliverable that will contain everything to be reviewed. All source code and other files related to the FE Dev practical should be included in `pmdt-fe/`. All design documents and other files related to the UX practical should be included in `pmdt-ux/`. 
-
-For each practical, you should answer the questions within the repsective `summary.md` file. You may answer these directly in the file itself, or write a document in a different format and provide the file or URL (e.g. `.docx`, `.pages`, `.pdf`, Notion, Google Docs). If you use a web-based document type, include the URL at the top of the `questions.md` file.
+Your project repo will serve as the final deliverable that will contain everything to be reviewed. All source code and other files related to the FE Dev practical should be included in `pmdt-fe/`. All design documents and other files related to the UX practical should be included in `pmdt-ux/`.
 
 ---
 
@@ -50,11 +51,11 @@ In the review, we'd like to evaluate your skills and technique regarding HTML, C
 ### Assignment
 Your task is to build a web page according to the given design. [View the design via an XD link](https://xd.adobe.com/view/05f9376c-2170-4cfb-b052-4a5dd381ecd5-50aa/grid). Make the rendered page look as close to the design as you can using your knowledge of HTML, CSS, and responsive design.
 
-This practical is also intended to test your ability to analyze a design and extract or infer details that may not be annotated.
+This practical is also intended to test your ability to analyze a design and extract or infer details that may not be annotated. If there are details not noted, use your best judgement, both as a designer and a developer.
 
-Read the annotations within the XD link's `Comments View` for additional specifications for the implementation.
+Read the annotations within the XD link's `Comments View` for additional specifications for the implementation. The copy for the design can be pulled from the XD link's `Specs View` or from `pmdt-fe/copy.md`.
 
-The copy for the design can be pulled from the XD link's `Specs View` or from `pmdt-fe/copy.md`.
+
 
 Some general things to consider with your code:
 - Web development best practices
@@ -77,43 +78,47 @@ Project Folder: `pmdt-ux`
 <!-- TODO -->
 
 ### Assignment
-Your task is to design **Variant B** of the Minicart component for a theoretical A/B test. **Variant A**, the control design, is provided in an XD file: [`pmdt-ux/minicart.xd`](./pmdt-ux/minicart.xd). The XD file can also be [viewed on the web](#TODO). Variant A is also the existing implementation on the Peter Millar website.
-
-**Note:** the Minicart and the Cart page are two separate entities. The Minicart is essentially a condensed version of the Cart page. Making changes to the Cart page is not part of this A/B test.
+Your task is to design **Variant B** of the Minicart component for a theoretical A/B test. **Variant A**, the control design, is provided as PNGs within `pmdt-ux/`. Variant A is also the existing implementation on the [Peter Millar website](https://www.petermillar.com/).
 
 Assume the following statements are true:
 
 - Our customers typically only purchase 1–2 items before checking out.
 - Customers who add 3+ items to their cart typically never end up checking out.
 - Peter Millar is a "Luxury Men's Fashion" brand.
-- Peter Millar uses the text "Bag" or "Shopping Bag" when referencing the user's shopping cart on the site.
+- Peter Millar uses the text "Bag" or "Shopping Bag" when referring to the user's shopping cart on the site.
+
+**You should redesign the Minicart component to support the hypothesis.** Essentially, your design should encourage users to check out at a higher rate. You should design for both desktop and mobile. You have the freedom to define the layout and interaction specifications of the designs (i.e., in your designs, these can differ from the control).
+
+**Note:** the Minicart and the Cart page are two separate entities. The Minicart is a condensed version of the Cart page that currently displays as an overlay. The Cart page is not within the scope of this A/B test.
+
+#### Hypothesis
+If the Minicart is more immersive and draws the user's focus to the content within it, the user will be encouraged to proceed to checkout. This will cause an increase in the rate of completed purchases.
 
 #### The Control
-[desktop screenshot]
+On desktop, the Minicart shows when adding a product to the cart, and when a user hovers on the Bag icon (when there is at least one product in their cart).
 
-On desktop, the Minicart shows when adding a product, and when a user hovers on the Bag icon (when there is at least one product in their cart).
+![Desktop screenshot](./docs/minicart-annotated.png)
 
-[mobile screenshot]
+On mobile, the Minicart only shows temporarily after adding a product to the cart. The design differs from desktop; it's more like a toast notification with a CTA. (Clicking on the Bag icon takes users to the Cart page.)
 
-On mobile, the Minicart only shows temporarily after adding a product. (Clicking on the Bag icon takes users to the Cart page.)
+<!-- ![Mobile screenshot](./docs/minicart-mobile-annotated.png) -->
+<div align="center">
+  <img style="display: block; width: 35%; margin-bottom: 3rem;" alt="Mobile screenshot" src="./docs/minicart-mobile-annotated.png">
+</div>
 
 To reproduce this UI state:
 1. Navigate a product page
 2. Select the product options (size, color, etc.) and click the "Add to Bag" button
 3. The Minicart will automatically show
 
-
-#### Hypothesis
-If the Minicart overlay is more immersive and draws the user's focus to the content within it, the user will be encouraged to proceed to checkout. This will cause an increase in conversion rate of completed purchases.
-
-
 #### Other Requirements
-You can use Adobe XD or Figma to design Variant B. If you use Figma, include a link to your design file at the top of the README at the root of your project repo, or a new file in `pmdt-ux/`.
+You can use Adobe XD or Figma to design Variant B. If you use Figma, include a link to your design file at the top of [`pmdt-ux/review.md`](./pmdt-ux/review.md).
 
-You should include any ideations or iterations. For example, if you created low-fidelity wireframes like sketches, include those too!
+You should include any ideations or iterations. If you create low-fidelity wireframes or sketches, include those too!
 
 ### Deliverables
 - Design Document (XD or Figma). It should include:
   - Final comps for Variant B
   - Any non-final versions or iterations you want to share
 - Your responses to the prompts in [`pmdt-ux/review.md`](./pmdt-ux/review.md)
+  - You may answer these directly in the file itself, or write a document in a different format and provide the file or URL (e.g., `.docx`, `.pages`, `.pdf`, Notion, Google Docs). If you use a web-based document type, include the URL at the top of `review.md`. If you use an alternative local document type, include the file within `pmdt-ux/`.
