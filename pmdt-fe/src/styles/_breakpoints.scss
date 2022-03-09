@@ -1,0 +1,41 @@
+// Breakpoint map and mixins to help you get started
+
+// Based on Bootstrap 4.x
+
+$breakpointsMin: (
+  'xs': (min-width: 576px), // large mobile / small tablet
+  'sm': (min-width: 768px), // tablet
+  'md': (min-width: 992px), // Where we start most desktop styles
+  'lg': (min-width: 1440px), // mid-sized laptops (MBP 13")
+  'xl': (min-width: 1600px), // helpful for targeting the beginning of average desktop screen sizes
+  'super': (min-width: 2000px), // For big monitors (e.g., iMac 27": 2560x1440)
+);
+
+$breakpointsMax: (
+  'xs': (max-width: 575.98px),
+  'sm': (max-width: 767.98px),
+  'md': (max-width: 991.98px),
+  'lg': (max-width: 1439.98px)
+);
+
+/** Mixin usage:
+
+@include min('md') {
+  ...
+}
+
+*/
+
+// Prints a media query using a value from min breakpoints map
+@mixin min($breakpoint) {  
+  @media #{inspect(map-get($breakpointsMin, $breakpoint))} {
+    @content;
+  }
+}
+
+// Prints a media query using a value from max breakpoints map
+@mixin max($breakpoint) {
+  @media #{inspect(map-get($breakpointsMax, $breakpoint))} {
+    @content;
+  }
+}
